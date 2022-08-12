@@ -1,10 +1,13 @@
 :root {
   // base
-  --font-family: "Jost", sans-serif;
+  --font-family: "RoundPro", sans-serif;
   --content-width: 1170px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
-  --light-color: #fff;
+  --white-color: #fffff;
+  --black-color: #000000;
+  --accent-color: #f38bae;
+  --text-color: #545454;
 }
