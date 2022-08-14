@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__link {
+    color: var(--black-color);
+
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

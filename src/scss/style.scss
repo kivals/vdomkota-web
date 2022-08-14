@@ -5,7 +5,9 @@
 @import "config/settings";
 
 // подключения компонентов страницы
-@import "./components/header";
+@import "components/nav";
+@import "components/social";
+@import "components/header";
 
 body {
 

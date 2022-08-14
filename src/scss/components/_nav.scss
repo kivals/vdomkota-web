@@ -1,0 +1,27 @@
+.nav {
+  &__list {
+    @include flex-all-center;
+
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black-color);
+    transition: color ease 0.2s;
+
+    @include hover {
+      color: var(--accent-color);
+    }
+
+    &--active {
+      color: var(--accent-color);
+    }
+  }
+}
