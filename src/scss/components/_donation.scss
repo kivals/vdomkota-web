@@ -1,26 +1,19 @@
 .donation {
-
   &__container {
     display: flex;
-
+    align-items: flex-end;
   }
 
   &__image {
     border-radius: 10%;
     overflow: hidden;
     width: 440px;
+    height: 350px;
   }
 
   &__content {
     padding-left: 40px;
     padding-right: 40px;
-  }
-
-  &__title {
-    font-size: 35px;
-    line-height: 135%;
-    color: var(--text-color);
-    margin-bottom: 20px;
   }
 
   &__bank-info {
