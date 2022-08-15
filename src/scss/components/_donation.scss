@@ -1,0 +1,71 @@
+.donation {
+
+  &__container {
+    display: flex;
+
+  }
+
+  &__image {
+    border-radius: 10%;
+    overflow: hidden;
+    width: 440px;
+  }
+
+  &__content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  &__title {
+    font-size: 35px;
+    line-height: 135%;
+    color: var(--text-color);
+    margin-bottom: 20px;
+  }
+
+  &__bank-info {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: var(--text-color);
+  }
+
+  &__card {
+    font-size: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--accent-color);
+    padding: 17px 15px 17px 15px;
+    border-radius: 9px;
+    letter-spacing: .06em;
+    color: var(--text-color);
+    margin-bottom: 20px;
+
+    &::before {
+      content: '';
+      background: url("../img/card.svg");
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+
+  &__additional {
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 150%;
+    font-style: italic;
+    color: #b2b2b2;
+
+    span {
+      font-size: 15px;
+      color: var(--text-color);
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+  }
+}
