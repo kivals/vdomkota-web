@@ -63,6 +63,7 @@
   &__scroll {
     &.swiper-scrollbar-horizontal {
       position: static;
+      z-index: 4;
       border-radius: 40px;
       width: 360px;
       height: 5px;
