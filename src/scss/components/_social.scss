@@ -22,5 +22,14 @@
     &--instagram {
       height: 32px;
     }
+
+    @include high-tablet {
+      width: 35px;
+      height: 35px;
+
+      &--instagram {
+        height: 27px;
+      }
+    }
   }
 }

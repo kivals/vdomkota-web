@@ -4,4 +4,8 @@
   line-height: 135%;
   color: var(--text-color);
   margin-bottom: 20px;
+
+  @include high-tablet {
+    font-size: 30px;
+  }
 }

@@ -1,11 +1,17 @@
 .nav {
   &__list {
     @include flex-all-center;
+    flex-wrap: wrap;
   }
 
   &__item {
+    margin-bottom: 10px;
     &:not(:last-child) {
       margin-right: 30px;
+
+      @include high-tablet {
+        margin-right: 15px;
+      }
     }
   }
 
