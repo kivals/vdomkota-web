@@ -5,10 +5,11 @@
 @import "config/settings";
 
 // подключения компонентов страницы
+@import "components/section-offset";
 @import "components/nav";
+@import "components/btn";
+@import "components/overlay";
 @import "components/social";
 @import "components/header";
-
-body {
-
-}
+@import "components/intro";
+@import "components/cat-slider";

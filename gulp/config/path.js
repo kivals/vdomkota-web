@@ -7,7 +7,7 @@ const root = path.basename(path.resolve());
 export default {
   src: {
     html: `${pathSrc}/html/**/*.html`,
-    files: `${pathSrc}/files/**/*.*`,
+    video: `${pathSrc}/video/**/*.*`,
     scss: `${pathSrc}/scss/**/*.scss`,
     js: `${pathSrc}/js/app.js`,
     images: `${pathSrc}/img/**/*.{jpg,jpeg,png,gif,webp}`,
@@ -17,7 +17,7 @@ export default {
 
   build: {
     html: `${pathBuild}/`,
-    files: `${pathBuild}/files/`,
+    video: `${pathBuild}/video/`,
     css: `${pathBuild}/css/`,
     js: `${pathBuild}/js/`,
     images: `${pathBuild}/img/`,
@@ -26,7 +26,7 @@ export default {
 
   watch: {
     html: `${pathSrc}/**/*.html`,
-    files: `${pathSrc}/files/**/*.*`,
+    video: `${pathSrc}/video/**/*.*`,
     scss: `${pathSrc}/scss/**/*.scss`,
     js: `${pathSrc}/js/**/*.js`,
     images: `${pathSrc}/img/**/*.{jpg,jpeg,png,svg,gif,webp}`,

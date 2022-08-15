@@ -1,7 +1,6 @@
 .nav {
   &__list {
     @include flex-all-center;
-
   }
 
   &__item {
@@ -15,13 +14,25 @@
     font-weight: 500;
     color: var(--black-color);
     transition: color ease 0.2s;
+    padding-bottom: 5px;
 
     @include hover {
       color: var(--accent-color);
     }
 
     &--active {
+      position: relative;
       color: var(--accent-color);
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: var(--accent-color);
+        width: 25px;
+        height: 2px;
+      }
     }
   }
 }

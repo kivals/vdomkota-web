@@ -22,7 +22,7 @@ import { zip } from "./gulp/tasks/zip.js";
 import { otfToTtf, ttfToWoff, fontStyle } from "./gulp/tasks/fonts.js";
 
 const watcher = () => {
-  gulp.watch(path.watch.files, copy);
+  gulp.watch(path.watch.video, copy);
   gulp.watch(path.watch.html, html);
   gulp.watch(path.watch.scss, scss);
   gulp.watch(path.watch.js, scripts);

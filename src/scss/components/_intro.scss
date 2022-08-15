@@ -1,0 +1,45 @@
+.intro {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    position: relative;
+    z-index: 4;
+    color: #fff;
+    margin: 0;
+    margin-bottom: auto;
+    text-align: center;
+    font-size: clamp(20px, 7vw, 70px);
+
+    span {
+      color: var(--accent-color);
+    }
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 4;
+    background-color: var(--accent-color);
+    bottom: 0;
+    color: var(--white-color);
+
+    @include hover {
+      background-color: var(--white-color);
+      color: var(--accent-color)
+    }
+  }
+
+  &__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
