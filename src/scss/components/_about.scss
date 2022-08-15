@@ -1,0 +1,32 @@
+.about {
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 342px;
+    height: 342px;
+    border-radius: 50%;
+    margin-right: 50px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 150%;
+    color: #4c4c4c;
+    @include mb(30px);
+  }
+}
