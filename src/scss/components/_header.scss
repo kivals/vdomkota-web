@@ -27,6 +27,13 @@
   }
 
   &__social-list {
+    @include small-tablet {
+      margin-left: auto;
+    }
+  }
+
+  &__burger {
+    margin-left: 25px;
   }
 
 }

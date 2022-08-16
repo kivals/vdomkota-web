@@ -3,8 +3,8 @@
     <a href="#" class="header__logo logo">
       <img loading="lazy" src="/img/logo-2.png" width="100" height="100" alt="Логотип сайта ВДОМКОТА">
     </a>
-    <nav class="header__nav nav">
-      <ul class="nav__list list-reset">
+    <nav class="header__nav nav" data-menu>
+      <ul class="nav__list list-reset" title="Главное меню">
         <li class="nav__item" data-menu-item data-scroll>
           <a href="#" class="nav__link nav__link--active" data-menu-item data-scroll>Главная</a>
         </li>
@@ -37,5 +37,11 @@
         </a>
       </li>
     </ul>
+
+    <button class="burger btn-reset header__burger" aria-label="Отрыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>
