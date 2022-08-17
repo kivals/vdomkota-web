@@ -12,8 +12,6 @@ const sprite = () => {
       mode: {
         stack: {
           sprite: `../icons/sprite.svg`,
-          // Создавать страницу с перечнем иконок
-          example: true
         },
       },
     }))

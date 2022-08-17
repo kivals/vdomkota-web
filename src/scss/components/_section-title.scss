@@ -8,4 +8,9 @@
   @include high-tablet {
     font-size: 30px;
   }
+
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
 }

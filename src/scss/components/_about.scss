@@ -3,6 +3,9 @@
   &__container {
     display: flex;
     align-items: center;
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
   &__image {
@@ -13,6 +16,12 @@
     border-radius: 50%;
     margin-right: 50px;
 
+    @include small-tablet {
+      width: 138px;
+      height: 138px;
+      margin-right: 0;
+    }
+
     img {
       height: 100%;
     }
@@ -20,6 +29,11 @@
 
   &__title {
     margin-bottom: 40px;
+
+    @include small-tablet {
+      margin-bottom: 30px;
+      text-align: center;
+    }
   }
 
   &__text {
@@ -28,5 +42,10 @@
     line-height: 150%;
     color: #4c4c4c;
     @include mb(30px);
+
+    @include small-tablet {
+      font-size: 14px;
+      text-align: center;
+    }
   }
 }

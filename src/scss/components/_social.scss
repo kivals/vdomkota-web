@@ -31,5 +31,14 @@
         height: 27px;
       }
     }
+
+    @include high-tablet {
+      width: 30px;
+      height: 30px;
+
+      &--instagram {
+        height: 22px;
+      }
+    }
   }
 }

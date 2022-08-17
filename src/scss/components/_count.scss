@@ -24,15 +24,17 @@
 
   &__list {
     @include flex-all-center;
+    flex-wrap: wrap;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px 30px;
 
-    &:not(:last-child) {
-      margin-right: 50px;
+    @include small-tablet {
+      padding: 10px 20px;
     }
   }
 
@@ -45,6 +47,17 @@
 
   &__image {
     margin-bottom: 25px;
+
+    img {
+      width: 128px;
+      height: 128px;
+
+      @include small-tablet {
+        width: 70px;
+        height: 70px;
+
+      }
+    }
   }
 
   &__digit {
@@ -52,10 +65,18 @@
     color: var(--white-color);
     font-weight: 700;
     margin-bottom: 20px;
+
+    @include small-tablet {
+      font-size: 35px;
+    }
   }
 
   &__descr {
     color: var(--white-color);
     font-size: 24px;
+
+    @include small-tablet {
+      font-size: 20px;
+    }
   }
 }

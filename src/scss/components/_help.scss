@@ -9,16 +9,38 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 35px;
+
+    @include mobile {
+      column-gap: 0;
+    }
   }
 
   &__item {
     grid-column: 3 span;
+
+    @include small-tablet {
+      grid-column: 4 span;
+    }
+
+    @include mobile {
+      grid-column: 12 span;
+    }
   }
 
   &__link {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    img {
+      max-height: 50px;
+      max-width: 50px;
+
+      @include small-tablet {
+        max-height: 35px;
+        max-width: 35px;
+      }
+    }
   }
 
   &__name {
@@ -28,5 +50,9 @@
     text-align: center;
     letter-spacing: .06em;
     color: var(--text-color);
+
+    @include small-tablet {
+      font-size: 16px;
+    }
   }
 }
