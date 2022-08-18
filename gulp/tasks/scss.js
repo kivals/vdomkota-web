@@ -3,7 +3,6 @@ import gulpSass from 'gulp-sass';
 import sass from 'sass';
 import rename from 'gulp-rename';
 import cleanCss from 'gulp-clean-css' // Сжатие CSS файла
-import groupCssMediaQueries from 'gulp-group-css-media-queries' // Группировка медиа запросов
 import webpCss from "gulp-webp";
 
 const sassPlugin = gulpSass(sass);
@@ -23,7 +22,6 @@ const scss = () => {
       overrideBrowserslist: ["last 5 versions"]
     })))
     .pipe(webpCss())
-    .pipe(app.plugins.ifPlugin(app.isBuild, groupCssMediaQueries()))
     .pipe(app.plugins.size({
       title: "style.css"
     }))

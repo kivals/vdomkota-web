@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@@include("chunk/head.html", {
+"title": "Ищем хозяев"
+})
+<body class="page__body">
+<div class="site-container">
+  @@include("chunk/header.html")
+  <main class="main">
+    <section class="find container">
+      <h1 class="find__title">Котики, которые ищут дом</h1>
+      <ul class="find__list list-reset">
+        <li class="find__item">
+          <article class="cat-item">
+            <div class="cat-item__wrapper">
+              <div class="cat-item__image">
+                <img src="./img/find/cat1.jpg" alt="Кот Пират">
+              </div>
+              <p class="cat-item__name">Лео</p>
+              <div class="cat-item__overlay">
+                <a href="#" class="cat-item__button btn">Посмотреть котика</a>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+  @@include("chunk/footer.html")
+</div>
+</body>
+</html>

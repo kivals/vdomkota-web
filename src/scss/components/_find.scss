@@ -1,0 +1,14 @@
+.find {
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 35px;
+    color: var(--text-color);
+    line-height: 135%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
