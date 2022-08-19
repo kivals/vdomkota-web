@@ -1,6 +1,7 @@
 .find {
   padding-top: 160px;
   padding-bottom: 160px;
+  background-color: var(--section-bg-color);
 
   &__title {
     margin: 0;
@@ -10,5 +11,11 @@
     line-height: 135%;
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
