@@ -1,0 +1,59 @@
+.cat-id {
+
+  &__gallery {
+
+  }
+}
+
+.slider-top {
+  .swiper-slide {
+    cursor: pointer;
+  }
+
+  .swiper-button-next {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding-right: 15px;
+    opacity: 0.2;
+    transition: opacity 0.6s;
+  }
+
+  .swiper-button-prev {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    opacity: 0.2;
+    transition: opacity 0.6s;
+  }
+
+  .swiper-button-prev:hover, .swiper-button-next:hover{
+    opacity: 1;
+  }
+}
+
+.thumbs-slider {
+  .swiper-slide {
+    width: auto;
+    border-radius: 10px;
+    opacity: 0.8;
+    filter: grayscale(100%);
+  }
+
+  .swiper-slide-thumb-active {
+    opacity: 1;
+    filter: initial;
+  }
+
+  img {
+    cursor: pointer;
+    width: auto;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+}
+

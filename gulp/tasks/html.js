@@ -12,7 +12,6 @@ const html = () => {
       })
     ))
     .pipe(fileInclude())
-    .pipe(webpHtml())
     .pipe(app.plugins.size({
       title: "До сжатия"
     }))

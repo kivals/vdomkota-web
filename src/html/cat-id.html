@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@@include("chunk/head.html", {
+"title": "Кот Лапка"
+})
+<body class="page__body">
+<div class="site-container">
+  @@include("chunk/header.html")
+  <main class="main">
+    <section class="cat-id">
+      <div class="container">
+        <div class="cat-id__gallery">
+          <div class="car-item__slider-top slider-top swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/cat-id/cat1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/cat-id/cat2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/cat-id/cat3.jpg" alt="">
+              </div>
+            </div>
+            <div title="next" class="swiper-button-next swiper-button-white"></div>
+            <div title="prev" class="swiper-button-prev swiper-button-white"></div>
+          </div>
+
+          <div thumbsSlider="" class="cat-id__thumbs-slider thumbs-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/cat-id/cat1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/cat-id/cat2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/cat-id/cat3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include("chunk/footer.html")
+</div>
+</body>
+</html>
