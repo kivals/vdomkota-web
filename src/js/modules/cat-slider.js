@@ -18,9 +18,10 @@ new Swiper('.cat-slider__swiper', {
 const thumbsSlider = new Swiper('.thumbs-slider', {
   loop: true,
   spaceBetween: 10,
-  slidesPerView: 4,
+  slidesPerView: "auto",
   freeMode: true,
   watchSlidesProgress: true,
+  touchRatio: 0.4,
 })
 
 const sliderTop = new Swiper('.slider-top', {
